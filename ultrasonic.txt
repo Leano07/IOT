@@ -38,13 +38,13 @@ while True:
     import smtplib
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login("amitk622384@gmail.com", "9812377817")
+    server.login("email@gmail.com", "password")
 
     msg ="""Dear Amity University
 This is to inform you that the Trash Bin of Academic block C is currently at its limit
 Please send officials to take care of it.
 THANK YOU"""
-    server.sendmail("amitk622384@gmail.com", "akvd07@gmail.com", msg)
+    server.sendmail("email@gmail.com", "akvd07@gmail.com", msg)
     server.quit()
 
 
